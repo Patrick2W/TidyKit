@@ -18,6 +18,8 @@
 		F606F57A2B9721D3005EDA94 /* URL+Tidy.swift in Sources */ = {isa = PBXBuildFile; fileRef = F606F5732B9721D2005EDA94 /* URL+Tidy.swift */; };
 		F606F57B2B9721D3005EDA94 /* TidyExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F606F5742B9721D2005EDA94 /* TidyExtension.swift */; };
 		F606F57C2B9721D3005EDA94 /* UIView+Tidy.swift in Sources */ = {isa = PBXBuildFile; fileRef = F606F5752B9721D2005EDA94 /* UIView+Tidy.swift */; };
+		F606F5832B983F60005EDA94 /* mute.caf in Resources */ = {isa = PBXBuildFile; fileRef = F606F5812B983F60005EDA94 /* mute.caf */; };
+		F606F5842B983F60005EDA94 /* KeepAliveService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F606F5822B983F60005EDA94 /* KeepAliveService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,6 +45,8 @@
 		F606F5732B9721D2005EDA94 /* URL+Tidy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "URL+Tidy.swift"; sourceTree = "<group>"; };
 		F606F5742B9721D2005EDA94 /* TidyExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TidyExtension.swift; sourceTree = "<group>"; };
 		F606F5752B9721D2005EDA94 /* UIView+Tidy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Tidy.swift"; sourceTree = "<group>"; };
+		F606F5812B983F60005EDA94 /* mute.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = mute.caf; sourceTree = "<group>"; };
+		F606F5822B983F60005EDA94 /* KeepAliveService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeepAliveService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,6 +91,7 @@
 			children = (
 				F606F5402B9720C1005EDA94 /* TidyKit.h */,
 				F606F56E2B9721D2005EDA94 /* TidyExtension */,
+				F606F5802B983F60005EDA94 /* KeepAlive */,
 				F606F5412B9720C1005EDA94 /* TidyKit.docc */,
 			);
 			path = Sources;
@@ -112,6 +117,15 @@
 				F606F5752B9721D2005EDA94 /* UIView+Tidy.swift */,
 			);
 			path = TidyExtension;
+			sourceTree = "<group>";
+		};
+		F606F5802B983F60005EDA94 /* KeepAlive */ = {
+			isa = PBXGroup;
+			children = (
+				F606F5812B983F60005EDA94 /* mute.caf */,
+				F606F5822B983F60005EDA94 /* KeepAliveService.swift */,
+			);
+			path = KeepAlive;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -206,6 +220,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F606F5832B983F60005EDA94 /* mute.caf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -228,6 +243,7 @@
 				F606F57C2B9721D3005EDA94 /* UIView+Tidy.swift in Sources */,
 				F606F5422B9720C1005EDA94 /* TidyKit.docc in Sources */,
 				F606F5792B9721D3005EDA94 /* UIFont+Tidy.swift in Sources */,
+				F606F5842B983F60005EDA94 /* KeepAliveService.swift in Sources */,
 				F606F57B2B9721D3005EDA94 /* TidyExtension.swift in Sources */,
 				F606F5772B9721D3005EDA94 /* UIColor+Tidy.swift in Sources */,
 				F606F57A2B9721D3005EDA94 /* URL+Tidy.swift in Sources */,
