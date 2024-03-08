@@ -18,6 +18,9 @@
 		F606F5982B9B0225005EDA94 /* JsBaseHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = F606F5952B9B0225005EDA94 /* JsBaseHandler.swift */; };
 		F606F5992B9B0225005EDA94 /* JsApiHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = F606F5962B9B0225005EDA94 /* JsApiHandler.swift */; };
 		F606F59A2B9B0225005EDA94 /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F606F5972B9B0225005EDA94 /* WebViewController.swift */; };
+		F606F59F2B9B0330005EDA94 /* NoSound.wav in Resources */ = {isa = PBXBuildFile; fileRef = F606F59C2B9B0330005EDA94 /* NoSound.wav */; };
+		F606F5A02B9B0330005EDA94 /* mute.caf in Resources */ = {isa = PBXBuildFile; fileRef = F606F59D2B9B0330005EDA94 /* mute.caf */; };
+		F606F5A12B9B0330005EDA94 /* KeepAliveService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F606F59E2B9B0330005EDA94 /* KeepAliveService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -44,11 +47,12 @@
 		F606F52B2B971FB9005EDA94 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F606F52D2B971FB9005EDA94 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F606F56A2B972193005EDA94 /* TidyKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = TidyKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		F606F5912B9B021E005EDA94 /* mute.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = mute.caf; sourceTree = "<group>"; };
-		F606F5922B9B021E005EDA94 /* KeepAliveService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeepAliveService.swift; sourceTree = "<group>"; };
 		F606F5952B9B0225005EDA94 /* JsBaseHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JsBaseHandler.swift; sourceTree = "<group>"; };
 		F606F5962B9B0225005EDA94 /* JsApiHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JsApiHandler.swift; sourceTree = "<group>"; };
 		F606F5972B9B0225005EDA94 /* WebViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
+		F606F59C2B9B0330005EDA94 /* NoSound.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = NoSound.wav; sourceTree = "<group>"; };
+		F606F59D2B9B0330005EDA94 /* mute.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = mute.caf; sourceTree = "<group>"; };
+		F606F59E2B9B0330005EDA94 /* KeepAliveService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeepAliveService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,7 +88,7 @@
 			isa = PBXGroup;
 			children = (
 				F606F5942B9B0225005EDA94 /* TidyWebView */,
-				F606F5932B9B021E005EDA94 /* KeepAlive */,
+				F606F59B2B9B0330005EDA94 /* KeepAlive */,
 				F606F51F2B971FB7005EDA94 /* AppDelegate.swift */,
 				F606F5212B971FB7005EDA94 /* SceneDelegate.swift */,
 				F606F5232B971FB7005EDA94 /* ViewController.swift */,
@@ -104,15 +108,6 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		F606F5932B9B021E005EDA94 /* KeepAlive */ = {
-			isa = PBXGroup;
-			children = (
-				F606F5912B9B021E005EDA94 /* mute.caf */,
-				F606F5922B9B021E005EDA94 /* KeepAliveService.swift */,
-			);
-			path = KeepAlive;
-			sourceTree = "<group>";
-		};
 		F606F5942B9B0225005EDA94 /* TidyWebView */ = {
 			isa = PBXGroup;
 			children = (
@@ -121,6 +116,17 @@
 				F606F5972B9B0225005EDA94 /* WebViewController.swift */,
 			);
 			path = TidyWebView;
+			sourceTree = "<group>";
+		};
+		F606F59B2B9B0330005EDA94 /* KeepAlive */ = {
+			isa = PBXGroup;
+			children = (
+				F606F59C2B9B0330005EDA94 /* NoSound.wav */,
+				F606F59D2B9B0330005EDA94 /* mute.caf */,
+				F606F59E2B9B0330005EDA94 /* KeepAliveService.swift */,
+			);
+			name = KeepAlive;
+			path = ../../../TestKeepAlive/TestKeepAlive/KeepAlive;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -183,7 +189,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				F606F52C2B971FB9005EDA94 /* LaunchScreen.storyboard in Resources */,
+				F606F59F2B9B0330005EDA94 /* NoSound.wav in Resources */,
 				F606F5292B971FB9005EDA94 /* Assets.xcassets in Resources */,
+				F606F5A02B9B0330005EDA94 /* mute.caf in Resources */,
 				F606F5272B971FB7005EDA94 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -200,6 +208,7 @@
 				F606F5242B971FB7005EDA94 /* ViewController.swift in Sources */,
 				F606F5202B971FB7005EDA94 /* AppDelegate.swift in Sources */,
 				F606F5992B9B0225005EDA94 /* JsApiHandler.swift in Sources */,
+				F606F5A12B9B0330005EDA94 /* KeepAliveService.swift in Sources */,
 				F606F5222B971FB7005EDA94 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
