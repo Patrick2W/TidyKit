@@ -125,7 +125,8 @@
 				F606F5812B983F60005EDA94 /* mute.caf */,
 				F606F5822B983F60005EDA94 /* KeepAliveService.swift */,
 			);
-			path = KeepAlive;
+			name = KeepAlive;
+			path = "../../TidyKit-Demo/TidyKit-Demo/KeepAlive";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
